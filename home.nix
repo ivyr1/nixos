@@ -7,15 +7,14 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     home-manager
-    fastfetch
-    ripgrep
-    fd
     btop
     tree
     nemo
     wl-clipboard
     nerd-fonts.iosevka
     nerd-fonts.blex-mono
+    googlesans-code
+    (pkgs.iosevka-bin.override { variant = "SS15"; })
     liberation_ttf
     reversal-icon-theme
     nwg-look
@@ -24,6 +23,10 @@
     localsend
     obsidian
     onlyoffice-desktopeditors
+    thunderbird
+    jetbrains.clion
+    spotify
+#    anydesk
   ];
   programs.direnv = {
     enable = true;
@@ -32,7 +35,9 @@
   imports = [
     ./modules/shell.nix
     ./modules/git.nix
-    ./modules/kitty.nix
+    ./modules/alacritty.nix
+#    ./modules/kitty.nix
+#    ./modules/ghostty.nix
     ./modules/waybar.nix
     ./modules/neovim.nix
     ./modules/niri.nix

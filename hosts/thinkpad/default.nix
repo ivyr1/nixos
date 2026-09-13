@@ -10,6 +10,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.initrd.kernelModules = [ "xe" ];
+  boot.blacklistedKernelModules = [ "spd5118" ];
   boot.kernelModules = [ "thinkpad_acpi" ];
   boot.kernelParams = [
     "i915.force_probe=!7d45"
@@ -34,6 +35,8 @@
   powerManagement.powertop.enable = true;
   services.thermald.enable = true;
   services.power-profiles-daemon.enable = true;
+
+  hardware.cpu.intel.npu.enable = false;
 
   services.udev.extraRules = ''
     ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{power/control}="auto"

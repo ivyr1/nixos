@@ -77,5 +77,17 @@
         halign = center
         valign = center
     }
+
+    # BATTERY
+    label {
+        monitor =
+        text = cmd[update:10000] echo "$(${pkgs.coreutils}/bin/cat /sys/class/power_supply/BAT*/capacity 2>/dev/null || echo 100)%"
+        color = rgba(216, 222, 233, 0.70)
+        font_size = 18
+        font_family = Adwaita Sans
+        position = -30, 30
+        halign = right
+        valign = bottom
+    }
   '';
 }

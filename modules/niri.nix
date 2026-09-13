@@ -5,9 +5,6 @@
     vicinae
     swaybg
     wlsunset
-    hypridle
-    hyprlock
-    swaynotificationcenter
     swayosd
     playerctl
   ];
@@ -90,7 +87,7 @@
     binds {
         Mod+Shift+Slash { show-hotkey-overlay; }
 
-        Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+        Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
         Mod+Space hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
         Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 

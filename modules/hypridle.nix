@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     hypridle
-    hyprlock
   ];
 
   xdg.configFile."hypr/hypridle.conf".text = ''

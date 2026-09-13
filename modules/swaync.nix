@@ -16,7 +16,7 @@
 
     style = ''
 :root {
-  font-family: "LiberationSans", "Liberation Sans", sans-serif;
+  font-family: "Adwaita Sans", "Adwaita Sans", sans-serif;
   --cc-bg: rgba(27, 28, 30, 0.95);
   --noti-border-color: #ffffff;
   --noti-bg: 35, 35, 38;
@@ -41,8 +41,8 @@
   --notification-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3),
     0 1px 3px 1px rgba(0, 0, 0, 0.7), 0 2px 6px 2px rgba(0, 0, 0, 0.3);
     
-  --font-size-body: 17px;
-  --font-size-summary: 19px;
+  --font-size-body: 14px;
+  --font-size-summary: 15px;
   
   --hover-tranistion: background 0.15s ease-in-out;
   --group-collapse-tranistion: opacity 400ms ease-in-out;

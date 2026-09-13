@@ -9,6 +9,8 @@
       };
       init.defaultBranch = "main";
       pull.rebase = true;
+      diff.tool = "nvimdiff";
+      difftool.prompt = false;
     };
   };
   programs.gh.enable = true;

@@ -4,6 +4,11 @@
 {
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 53317 ];
+    allowedUDPPorts = [ 53317 ];
+  };
 
   time.timeZone = "Asia/Ho_Chi_Minh";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -35,14 +40,13 @@
   programs.git.enable = true;
   programs.niri.enable = true;
   programs.firefox.enable = true;
-
   # Audio & Services
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
-    pulse.enable = true;
+
     jack.enable = true;
   };
 
