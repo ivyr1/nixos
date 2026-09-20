@@ -8,7 +8,7 @@
       positionX = "right";
       positionY = "bottom";
       timeout = 5;
-      timeout-low = 2;
+      timeout-low = 5;
       timeout-critical = 0;
       fit-to-screen = false;
       notification-window-width = 450;

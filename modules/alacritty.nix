@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.alacritty = {
     enable = true;
     settings = {
@@ -14,17 +13,21 @@
       font = {
         size = 17.0;
         normal = {
-          family = "Google Sans Code";
+          family = "Iosevka SS15";
           style = "Regular";
         };
         bold = {
-          family = "Google Sans Code";
+          family = "Iosevka SS15";
           style = "Bold";
         };
         italic = {
-          family = "Google Sans Code";
+          family = "Iosevka SS15";
           style = "Normal";
         };
+        # offset = {
+        #   x = -1;
+        #   y = 1;
+        # };
       };
 
       terminal.shell = {

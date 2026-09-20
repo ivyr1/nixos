@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   home.username = "larry";
   home.homeDirectory = "/home/larry";
 
@@ -14,7 +16,7 @@
     nerd-fonts.iosevka
     nerd-fonts.blex-mono
     googlesans-code
-    (pkgs.iosevka-bin.override { variant = "SS15"; })
+    (pkgs.iosevka-bin.override {variant = "SS15";})
     liberation_ttf
     reversal-icon-theme
     nwg-look
@@ -26,7 +28,8 @@
     thunderbird
     jetbrains.clion
     spotify
-#    anydesk
+    alejandra # .nix formatter
+    #    anydesk
   ];
   programs.direnv = {
     enable = true;
@@ -36,8 +39,8 @@
     ./modules/shell.nix
     ./modules/git.nix
     ./modules/alacritty.nix
-#    ./modules/kitty.nix
-#    ./modules/ghostty.nix
+    #    ./modules/kitty.nix
+    #    ./modules/ghostty.nix
     ./modules/waybar.nix
     ./modules/neovim.nix
     ./modules/niri.nix
@@ -54,7 +57,7 @@
     theme = {
       name = "Celestial-Azul-Dark";
     };
-    
+
     iconTheme = {
       name = "Reversal-dark";
     };
