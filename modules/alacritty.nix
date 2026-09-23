@@ -13,21 +13,17 @@
       font = {
         size = 17.0;
         normal = {
-          family = "Iosevka SS15";
+          family = "Google Sans Code";
           style = "Regular";
         };
         bold = {
-          family = "Iosevka SS15";
+          family = "Google Sans Code";
           style = "Bold";
         };
         italic = {
-          family = "Iosevka SS15";
+          family = "Google Sans Code";
           style = "Normal";
         };
-        # offset = {
-        #   x = -1;
-        #   y = 1;
-        # };
       };
 
       terminal.shell = {

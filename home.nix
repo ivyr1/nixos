@@ -23,10 +23,8 @@
     tauon
     adwaita-fonts
     localsend
-    obsidian
     onlyoffice-desktopeditors
     thunderbird
-    jetbrains.clion
     spotify
     alejandra # .nix formatter
     #    anydesk
